@@ -1,0 +1,269 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+
+#div1{
+    border: black 2px solid;
+    width: 100%;
+    background-color: black;
+}
+#div2{
+    background-color: blue;
+    height: 80px;
+    width: 73%;
+    margin-top: 1.2%;
+    margin-left: 26%;
+    clip-path: polygon(0% 100%, 10% 0%, 100% 0%, 100% 100%);
+}
+#div3{
+    background-color: #1ed760;
+    width: 96.4%;
+    margin-right: 1%;
+    height: auto;
+    margin-left: 0.6%;
+    margin-top: -1%;
+    margin-bottom: 1%;
+    padding: 1%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#sub{
+    position: absolute;
+    font-size: 5vw;
+    margin-top: -1%;
+    margin-left: 2%;
+}
+
+h2{
+    color: white;
+    border-radius: 10px;
+    background: radial-gradient(circle farthest-side at 30px 20px, #1ed760, #bac9bf)
+}
+
+font[]{
+
+}
+
+ul{
+    list-style-image: url(/resource/headphones.png);
+}
+
+li{ 
+  background: url(/resource/headphones.png) 0 50% no-repeat;
+  list-style-type: none;
+  background-position: 590px 0;
+}
+
+li:nth-of-type(1){
+    background-position: 335px 0;
+}
+
+li:nth-of-type(2){
+    background-position: 280px 0;
+}
+li.first:nth-of-type(3){
+    background-position: 500px 0;
+}
+li:nth-of-type(3){
+    background-position: 350px 0;
+}
+li.second:nth-of-type(4){
+    background-position: 400px 0;
+}
+li:nth-of-type(4){
+    background-position: 705px 0;
+}
+li:nth-of-type(5){
+    background-position: 110px 0;
+}
+li:nth-of-type(6){
+    background-position: 130px 0;
+}
+li:nth-of-type(7){
+    background-position: 265px 0;
+}
+
+span#sub{
+    animation: none;
+}
+
+i{
+    font-weight: bold;
+    color: white;
+}
+
+span{
+    position: absolute;
+    margin-left: -23%;
+    margin-top: 4%;
+    color: white;
+    position: absolute;
+    margin-top: 90px;
+    margin-left: -280px;
+    font-size: 70px;
+    animation: blink1 2s linear infinite;
+}
+
+svg{
+    margin-left: 12%;
+    margin-top: 2%;
+    width: 410px;
+    height: 170px;
+}
+rect{
+    x: 5px;
+    y: 5px;
+    width: 400px;
+    height: 160px;
+    rx: 50px;
+    ry: 100px;
+    fill: white;
+    stroke: black;
+    stroke-width: 5px;
+}
+
+small{
+    font-size: 3vw;
+}
+
+
+@keyframes blink1 {
+    0% { color: rgba(34, 34, 34, 1); }
+    50% { color: rgba(34, 34, 34, 0); }
+    100% { color: rgba(34, 34, 34, 1); }
+  }
+
+tspan{
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+@media (min-width: 992px) and (max-width: 1250px){
+    svg{
+        margin-left: 5%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    svg{
+        margin-left: 25%;
+    }
+    #sub{
+        margin-top: 0%;
+    }
+    #div2{
+        height: 60px;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 600px){
+    svg{
+        margin-left: 15%;
+    }
+    #sub{
+        margin-top: 0%;
+    }
+    
+    #div2{
+        height: 50px;
+    }
+}
+
+@media (max-width: 599px) and (min-width: 554px){
+    svg{
+        margin-left: 10%;
+    }
+    
+    #sub{
+        margin-top: 1%;
+    }
+    
+    #div2{
+        height: 50px;
+    }
+}
+
+@media (max-width: 553px) and (min-width: 420px){
+
+    #div2{
+        width: 72.5%;
+    }
+
+    #div3{
+        width: 95.9%;
+    }
+
+    svg{
+    width: 255px;
+    height: 140px;
+    margin-left: 19%;
+    }
+
+    rect{
+    width: 245px;
+    height: 130px;
+    }
+    
+    #sub{
+        margin-top: 1%;
+    } 
+    
+    #div2{
+        height: 40px;
+    }
+
+    span{
+        margin-top: 75px;
+        margin-left: -170px;
+        font-size: 40px;
+    }
+
+    tspan{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 420px){
+
+    #div2{
+        width: 71.5%;
+    }
+
+    #div3{
+        width: 94.9%;
+    }
+
+
+    svg{
+        width: 255px;
+        height: 140px;
+        margin-left: 0%;
+        }
+        rect{
+        width: 245px;
+        height: 130px;
+        }
+        #sub{
+            margin-top: 1%;
+        } 
+
+        #div2{
+            height: 30px;
+        }
+        span{
+            margin-top: 65px;
+            margin-left: -170px;
+            font-size: 40px;
+        }
+
+        tspan{
+            font-size: 14px;
+        }
+}
